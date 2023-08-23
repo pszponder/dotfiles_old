@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of ZSH Terminal Shell
+# ZSH Terminal Shell
 
 ## Resources
 

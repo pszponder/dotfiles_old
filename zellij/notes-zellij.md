@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of Zellij (terminal multiplexer / TMUX alternative)
+#Zellij (terminal multiplexer / TMUX alternative)
 
 ## Resources
 

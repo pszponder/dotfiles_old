@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of Kitty terminal
+# Kitty Terminal
 
 ## Resources
 

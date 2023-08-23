@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of Alacritty terminal
+# Alacrity terminal
 
 ## Resources
 

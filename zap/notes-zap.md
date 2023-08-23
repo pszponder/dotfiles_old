@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of Zap (minimal zsh plugin manager)
+# Zap (minimal zsh plugin manager)
 
 ## Resources
 

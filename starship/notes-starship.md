@@ -1,4 +1,4 @@
-# Notes for Installation and Setup of Starship Prompt
+# Starship Prompt
 
 ## Resources
 
