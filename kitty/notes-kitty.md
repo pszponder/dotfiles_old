@@ -4,5 +4,6 @@
 
 -   [kitty](https://sw.kovidgoyal.net/kitty/)
 -   [GitHub - Kitty](https://github.com/kovidgoyal/kitty)
+-   [Kitty + SSH](https://sw.kovidgoyal.net/kitty/kittens/ssh/#truly-convenient-ssh)
 -   [GitHub - Kitty Themes](https://github.com/dexpota/kitty-themes)
 -   [Elijah Manor - Effective Nerd Fonts in Multiple Terminals](https://www.youtube.com/watch?v=mQdB_kHyZn8)

@@ -1,5 +1,10 @@
 # ZSH Terminal Shell
 
+## Plugins
+
+-   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+-   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
 ## Resources
 
 -   [Brodie Roberts - Uninstall Oh My ZSH Right Now and Do This Instead](https://www.youtube.com/watch?v=21_WkzBErQk)
