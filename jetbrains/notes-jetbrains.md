@@ -20,8 +20,17 @@
 ### File Explorer
 
 - Toggle File Explorer - `Leader + e`
+- Hide File Explorer - `Leader + b`
 - Use `h,j,k,l` to navigate around files
 - Use `ESC` to go back to file editor
 - Use `ENTER` to open currently selected file
+- Use `m` when navigating in File Explorer to open up menu
+
+### Searching
+
+- Search within the file - `Ctrl + f`
+- Global search - `Ctrl + Shift + f`
+- Search Everywhere - `Leader + ff`
+- Find in Path - `Leader + fg`
 
 ## Resources / References
