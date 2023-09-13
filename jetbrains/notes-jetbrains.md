@@ -33,4 +33,12 @@
 - Search Everywhere - `Leader + ff`
 - Find in Path - `Leader + fg`
 
+### Multi-Cursor Select
+
+**NOTE:** First select the text in visual mode
+
+- Select next match - `mc`
+- Skip next match - `mx`
+- Select previous match - `mc`
+
 ## Resources / References
