@@ -4,6 +4,10 @@
 
 `Leader` = Space Bar
 
+### Opening up Files
+
+- Open up existing file from a menu - `Ctrl + Shift + n`
+
 ### Editor Panes
 
 - Split Editor (Vertical) - `Leader + v`
