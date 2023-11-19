@@ -30,6 +30,7 @@ Instructions how to manage node with pnpm
 - [bat (alternative to cat)](https://github.com/sharkdp/bat)
 - [jq (manipulate json in command line)](https://jqlang.github.io/jq/)
 - [exa (modern ls)](https://github.com/ogham/exa)
+- [lsd (ls alternative)](https://github.com/lsd-rs/lsd)
 - [lazygit (cli git client)](https://github.com/jesseduffield/lazygit)
 - [fd (user-friendly alternative to find)](https://github.com/sharkdp/fd)
 - [zoxide (smarter cd command)](https://github.com/ajeetdsouza/zoxide)
@@ -46,6 +47,7 @@ Instructions how to manage node with pnpm
 - [htop (interactive process viewer)](https://htop.dev/)
 - [delta (improved diff tool)](https://github.com/dandavison/delta)
 - [curlie](https://github.com/rs/curlie)
+- [yazi - terminal file manager](https://github.com/sxyazi/yazi)
 
 ## Resources
 
@@ -55,3 +57,4 @@ Instructions how to manage node with pnpm
 - [chris@machine - Manage your dotfiles across multiple machines with GNU Stow and Git](https://www.youtube.com/watch?v=90xMTKml9O0)
 - [DistroTube - Git Bare Repository - A Better Way to Manage Dotfiles](https://www.youtube.com/watch?v=tBoLDpTWVOM)
 - [Rawkode Academy 2023 Top 5 CLI Tools you need to know!](https://www.youtube.com/watch?v=TNlDSG1iDW8)
+- [The Ultimate "git nah" alias](https://laravel-news.com/the-ultimate-git-nah-alias?ref=dailydev)
