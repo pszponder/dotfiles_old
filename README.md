@@ -66,6 +66,8 @@ Instructions how to manage node with pnpm
 - [System Crafters - Managing Your Dotfiles](https://www.youtube.com/playlist?list=PLEoMzSkcN8oNB7Xm3RNKMy_vygbDlj666)
 - [chris@machine - Manage your dotfiles across multiple machines with GNU Stow and Git](https://www.youtube.com/watch?v=90xMTKml9O0)
 - [DistroTube - Git Bare Repository - A Better Way to Manage Dotfiles](https://www.youtube.com/watch?v=tBoLDpTWVOM)
+- [LinuxTechGeek - Git Bare Repository - Backup those dotfiles](https://www.youtube.com/watch?v=Cft1R85kpFA)
 - [Rawkode Academy 2023 Top 5 CLI Tools you need to know!](https://www.youtube.com/watch?v=TNlDSG1iDW8)
 - [The Ultimate "git nah" alias](https://laravel-news.com/the-ultimate-git-nah-alias?ref=dailydev)
 - [edheltez - dotfiles](https://github.com/edheltzel/dotfiles)
+- [dt dotfiles](https://gitlab.com/dwt1/dotfiles)
