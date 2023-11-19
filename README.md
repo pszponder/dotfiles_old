@@ -30,6 +30,7 @@ Instructions how to manage node with pnpm
 - [bat (alternative to cat)](https://github.com/sharkdp/bat)
 - [jq (manipulate json in command line)](https://jqlang.github.io/jq/)
 - [exa (modern ls)](https://github.com/ogham/exa)
+- [eza (better version of exa)](https://github.com/eza-community/eza)
 - [lsd (ls alternative)](https://github.com/lsd-rs/lsd)
 - [lazygit (cli git client)](https://github.com/jesseduffield/lazygit)
 - [fd (user-friendly alternative to find)](https://github.com/sharkdp/fd)
