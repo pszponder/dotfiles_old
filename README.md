@@ -71,3 +71,6 @@ Instructions how to manage node with pnpm
 - [The Ultimate "git nah" alias](https://laravel-news.com/the-ultimate-git-nah-alias?ref=dailydev)
 - [edheltez - dotfiles](https://github.com/edheltzel/dotfiles)
 - [dt dotfiles](https://gitlab.com/dwt1/dotfiles)
+- [Chris Titus - Easily Moving Linux Installs](https://www.youtube.com/watch?v=x6063EuxfEA)
+- [Chris Titus Blog - Easily Moving Linux Installs](https://christitus.com/chezmoi/)
+- [chezmoi - Dotfiles Manager](https://www.chezmoi.io/)
