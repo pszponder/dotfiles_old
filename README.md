@@ -73,4 +73,5 @@ Instructions how to manage node with pnpm
 - [dt dotfiles](https://gitlab.com/dwt1/dotfiles)
 - [Chris Titus - Easily Moving Linux Installs](https://www.youtube.com/watch?v=x6063EuxfEA)
 - [Chris Titus Blog - Easily Moving Linux Installs](https://christitus.com/chezmoi/)
+- [chris biscardi - chezmoi: Organize your ditfiles across multiple computers](https://www.youtube.com/watch?v=L_Y3s0PS_Cg)
 - [chezmoi - Dotfiles Manager](https://www.chezmoi.io/)
