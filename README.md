@@ -25,9 +25,18 @@ Instructions how to manage node with pnpm
 - [pnpm env](https://pnpm.io/cli/env)
 - [How to manage multiple nodejs versions with pnpm](https://medium.com/frontendweb/how-to-manage-multiple-nodejs-versions-with-pnpm-8bcce90abedb)
 
+#### Bun (Node / PNPM Replacement)
+
+- [Bun](https://bun.sh/)
+
 #### Shell tools
 
+- [topgrade (updater)](https://github.com/topgrade-rs/topgrade)
+- [bottom (rust rewrite of top)](https://clementtsang.github.io/bottom/0.8.0/)
+- [procs (replacement for ps written in Rust)](https://github.com/dalance/procs)
 - [bat (alternative to cat)](https://github.com/sharkdp/bat)
+- [sd (sed alternative)](https://github.com/chmln/sd)
+- [tealdeer (tldr in rust)](https://github.com/dbrgn/tealdeer)
 - [jq (manipulate json in command line)](https://jqlang.github.io/jq/)
 - [exa (modern ls)](https://github.com/ogham/exa)
 - [eza (better version of exa)](https://github.com/eza-community/eza)
@@ -40,7 +49,7 @@ Instructions how to manage node with pnpm
 - [shellfirm](https://github.com/kaplanelad/shellfirm)
 - [navi (look up and execute shell one-liners)](https://github.com/denisidoro/navi)
 - [ranger (cli file manager)](https://github.com/ranger/ranger)
-- [rtx - Runtime manager](https://github.com/jdxcode/rtx)
+- [rtx - Runtime manager (asdf rust clone)](https://github.com/jdx/rtx)
 - [tldr (community man pages)](https://tldr.sh/)
 - [httpie](https://httpie.io/)
 - [ctop (top-like interface for container metrics)](https://github.com/bcicen/ctop)
@@ -59,3 +68,4 @@ Instructions how to manage node with pnpm
 - [DistroTube - Git Bare Repository - A Better Way to Manage Dotfiles](https://www.youtube.com/watch?v=tBoLDpTWVOM)
 - [Rawkode Academy 2023 Top 5 CLI Tools you need to know!](https://www.youtube.com/watch?v=TNlDSG1iDW8)
 - [The Ultimate "git nah" alias](https://laravel-news.com/the-ultimate-git-nah-alias?ref=dailydev)
+- [edheltez - dotfiles](https://github.com/edheltzel/dotfiles)
