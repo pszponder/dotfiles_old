@@ -61,8 +61,8 @@ Instructions how to manage node with pnpm
 
 ## Resources
 
+- [Jake Wiesler - Never Setup A Development Environment From Scratch Again](https://www.jakewiesler.com/blog/portable-development-environment)
 - [Andrew Burgess - Dotfiles! Here's how I organize them](https://www.youtube.com/results?search_query=dotfiles)
-- [Jake Wiesler - Build a Portable Development Environment](https://www.youtube.com/playlist?list=PL1C97G3GhlHdANMFUIXTcFr14R7b7EBj9)
 - [System Crafters - Managing Your Dotfiles](https://www.youtube.com/playlist?list=PLEoMzSkcN8oNB7Xm3RNKMy_vygbDlj666)
 - [chris@machine - Manage your dotfiles across multiple machines with GNU Stow and Git](https://www.youtube.com/watch?v=90xMTKml9O0)
 - [DistroTube - Git Bare Repository - A Better Way to Manage Dotfiles](https://www.youtube.com/watch?v=tBoLDpTWVOM)
