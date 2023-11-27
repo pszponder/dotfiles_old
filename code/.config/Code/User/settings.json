@@ -233,7 +233,7 @@
   // =============================================
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
-  "sonarlint.pathToNodeExecutable": "/home/piotr/.local/share/rtx/installs/node/21.2.0/bin/node",
+  "sonarlint.pathToNodeExecutable": "~/.local/share/rtx/installs/node/21.2.0/bin/node",
   "disableLigatures.ligatures": [
     ".=",
     ".-",
@@ -401,7 +401,6 @@
     "openapi",
     "outdent",
     "pino",
-    "Piotr",
     "prettierc",
     "pydantic",
     "REDOC",
@@ -414,10 +413,7 @@
     "starlette",
     "struct",
     "Structs",
-    "Szponder",
-    "Tarnowski",
     "todos",
-    "Tomasz",
     "transpiles",
     "Traversy",
     "treeshake",
