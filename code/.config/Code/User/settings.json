@@ -1,0 +1,433 @@
+{
+  // =============================================
+  // ================ GENERAL ====================
+  // =============================================
+  "window.zoomLevel": 0.5,
+  "breadcrumbs.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "files.trimTrailingWhitespace": true,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // =============================================
+  // ================ EDITOR =====================
+  // =============================================
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Comic Code Ligatures', SymbolsNerdFont",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig', 'liga'",
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "editor.tabCompletion": "on",
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.linkedEditing": true,
+  // "editor.minimap.enabled": false,
+  "editor.minimap.autohide": true,
+  "editor.mouseWheelZoom": true,
+  "editor.detectIndentation": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortImports": true
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+  "editor.cursorWidth": 3,
+  "editor.formatOnPaste": true,
+  "editor.minimap.maxColumn": 50,
+  "editor.guides.bracketPairs": true,
+  "editor.largeFileOptimizations": true,
+  "editor.cursorBlinking": "expand",
+  "editor.stickyScroll.enabled": true,
+//   "editor.insertSpaces": true,
+
+  // =============================================
+  // ================ TERMINAL ===================
+  // =============================================
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/usr/bin/bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "/usr/bin/zsh",
+      "icon": "terminal-bash"
+    }
+  },
+  "terminal.external.linuxExec": "which $ZSH",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
+  // =============================================
+  // ================ WORKBENCH ==================
+  // =============================================
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.editor.titleScrollbarSizing": "large",
+//   "workbench.statusBar.visible": false,
+//   "workbench.activityBar.visible": false,
+
+  // =============================================
+  // ================ EXPLORER ===================
+  // =============================================
+  "explorer.confirmDragAndDrop": true,
+
+  // =============================================
+  // ================== GIT ======================
+  // =============================================
+  "git.autofetch": true,
+
+  // =============================================
+  // ================ WINDOW =====================
+  // =============================================
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
+
+  // =============================================
+  // ================ NOTEBOOK ====================
+  // =============================================
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.wordWrap": true,
+
+  // =============================================
+  // ================ VIM SETTINGS ===============
+  // =============================================
+  "vim.handleKeys": {
+    // Enable / Disable specific VIM Bindings in VSCode
+    // "<C-w>": false, // Disable VIM binding for "Close Window"
+    "<C-f>": false, // Disable VIM binding for "Find in File"
+  },
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.shell": "/usr/bin/zsh",
+  "vim.insertModeKeyBindings": [
+    // "jj" in Insert Mode => Go to Normal Mode
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    // "jk" in Insert Mode => Go to Normal Mode
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    // "kj" in Insert Mode => Go to Normal Mode
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] }, // save file
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+
+  // =============================================
+  // ============== LANGUAGE SPECIFIC ============
+  // =============================================
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "go.toolsManagement.autoUpdate": true,
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[json]": {
+    "editor.tabSize": 4
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+  },
+
+  // =============================================
+  // ================ EXTENSIONS =================
+  // =============================================
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "sonarlint.pathToNodeExecutable": "/home/piotr/.local/share/rtx/installs/node/21.2.0/bin/node",
+  "disableLigatures.ligatures": [
+    ".=",
+    ".-",
+    ":=",
+    "=:=",
+    "==",
+    "!=",
+    "===",
+    "!==",
+    "=/=",
+    "<-<",
+    "<<-",
+    "<--",
+    "<-",
+    "<->",
+    "->",
+    "-->",
+    "->>",
+    ">->",
+    "<=<",
+    "<<=",
+    "<==",
+    "<=>",
+    "=>",
+    "==>",
+    "=>>",
+    ">=>",
+    ">>=",
+    ">>-",
+    ">-",
+    "<~>",
+    "-<",
+    "-<<",
+    "=<<",
+    "<~~",
+    "<~",
+    "~~",
+    "~>",
+    "~~>",
+    "<<<",
+    "<<",
+    "<=",
+    "<>",
+    ">=",
+    ">>",
+    ">>>",
+    "{.",
+    "{|",
+    "[|",
+    "<:",
+    ":>",
+    "|]",
+    "|}",
+    ".}",
+    "<|||",
+    "<||",
+    "<|",
+    "<|>",
+    "|>",
+    "||>",
+    "|||>",
+    "<$",
+    "<$>",
+    "$>",
+    "<+",
+    "<+>",
+    "+>",
+    "<*",
+    "<*>",
+    "*>",
+    "\\\\",
+    "\\\\\\",
+    "\\*",
+    "*/",
+    "///",
+    "//",
+    "<//",
+    "<!==",
+    "</>",
+    "-->",
+    "/>",
+    ";;",
+    "::",
+    ":::",
+    "..",
+    "...",
+    "..<",
+    "!!",
+    "??",
+    "%%",
+    "&&",
+    "||",
+    "?.",
+    "?:",
+    "+",
+    "++",
+    "+++",
+    "-",
+    "--",
+    "---",
+    "*",
+    "**",
+    "***",
+    "~=",
+    "~-",
+    "www",
+    "-~",
+    "~@",
+    "^=",
+    "?=",
+    "/=",
+    "/==",
+    "|=",
+    "||=",
+    "#!",
+    "##",
+    "###",
+    "####",
+    "#{",
+    "#[",
+    "]#",
+    "#(",
+    "#?",
+    "#_",
+    "#_("
+  ],
+  "cSpell.userWords": [
+    "Amigoscode",
+    "apispec",
+    "autofetch",
+    "autohide",
+    "bnext",
+    "bprevious",
+    "calt",
+    "Caskaydia",
+    "Catppuccin",
+    "conint",
+    "conlist",
+    "DBNAME",
+    "dlig",
+    "Do'Urden",
+    "dotenv",
+    "dotnettools",
+    "Drizzt",
+    "Drow",
+    "dtos",
+    "esbenp",
+    "fastapi",
+    "fastify",
+    "gensalt",
+    "goroutines",
+    "hashpw",
+    "hlsearch",
+    "IIFE",
+    "inmem",
+    "johndoe",
+    "LENET",
+    "liga",
+    "lintstagedrc",
+    "MERN",
+    "middlewares",
+    "nestjs",
+    "nodenext",
+    "nunchucks",
+    "openapi",
+    "outdent",
+    "pino",
+    "Piotr",
+    "prettierc",
+    "pydantic",
+    "REDOC",
+    "sessionmaker",
+    "signin",
+    "signout",
+    "signup",
+    "smorest",
+    "sonarlint",
+    "starlette",
+    "struct",
+    "Structs",
+    "Szponder",
+    "Tarnowski",
+    "todos",
+    "Tomasz",
+    "transpiles",
+    "Traversy",
+    "treeshake",
+    "tsup",
+    "typeorm",
+    "unbuffered",
+    "Unmock",
+    "uvicorn",
+    "venv",
+    "vitest",
+    "vsplit"
+  ],
+}
