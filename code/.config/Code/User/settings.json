@@ -12,7 +12,7 @@
   // ================ EDITOR =====================
   // =============================================
   "editor.fontSize": 16,
-  "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Comic Code Ligatures', SymbolsNerdFont",
+  "editor.fontFamily": "'Liga ComicCode Nerd Font', 'CaskaydiaCove Nerd Font', 'Comic Code Ligatures', SymbolsNerdFont",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig', 'liga'",
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "boundary",
@@ -24,7 +24,6 @@
   // "editor.minimap.enabled": false,
   "editor.minimap.autohide": true,
   "editor.mouseWheelZoom": true,
-  "editor.detectIndentation": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.sortImports": true
@@ -39,7 +38,9 @@
   "editor.largeFileOptimizations": true,
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
-//   "editor.insertSpaces": true,
+  "editor.insertSpaces": false,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
 
   // =============================================
   // ================ TERMINAL ===================
@@ -186,7 +187,7 @@
   // ============== LANGUAGE SPECIFIC ============
   // =============================================
   "[javascript]": {
-    "editor.tabSize": 2
+    // "editor.tabSize": 4
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
@@ -195,19 +196,20 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "go.toolsManagement.autoUpdate": true,
   "[typescript]": {
-    "editor.tabSize": 2
+    // "editor.tabSize": 4
   },
   "[css]": {
     "editor.suggest.insertMode": "replace"
   },
   "[json]": {
-    "editor.tabSize": 4
+    // "editor.tabSize": 4
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "[python]": {
     "editor.tabSize": 4,
+    "editor.insertSpaces": true,
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
@@ -216,7 +218,7 @@
     "editor.insertSpaces": false
   },
   "[markdown]": {
-    "editor.tabSize": 2,
+    // "editor.tabSize": 4,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -233,7 +235,7 @@
   // =============================================
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
-  "sonarlint.pathToNodeExecutable": "~/.local/share/rtx/installs/node/21.2.0/bin/node",
+  "sonarlint.pathToNodeExecutable": "/home/piotr/.local/share/rtx/installs/node/21.2.0/bin/node",
   "disableLigatures.ligatures": [
     ".=",
     ".-",
@@ -401,6 +403,7 @@
     "openapi",
     "outdent",
     "pino",
+    "Piotr",
     "prettierc",
     "pydantic",
     "REDOC",
@@ -413,7 +416,10 @@
     "starlette",
     "struct",
     "Structs",
+    "Szponder",
+    "Tarnowski",
     "todos",
+    "Tomasz",
     "transpiles",
     "Traversy",
     "treeshake",
