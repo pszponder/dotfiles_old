@@ -8,7 +8,7 @@
 # Run fc-list | grep "<your font name>" to list the installed fonts
 
 # List of Fonts to Try:
-# https://www.nerdfonts.com/font-downloads (Install )
+# https://www.nerdfonts.com/font-downloads
 # https://github.com/githubnext/monaspace
 # https://github.com/JetBrains/JetBrainsMono
 # https://github.com/microsoft/cascadia-code
@@ -21,6 +21,5 @@ smoke_tests="Normal
 \033[4mUnderline\033[24m
 == === !== >= <= =>
 󰐊     󰄉      󰑓 󰒲 "
-
 
 printf "%b" "${smoke_tests}"
