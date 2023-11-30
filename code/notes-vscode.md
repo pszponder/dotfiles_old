@@ -2,19 +2,47 @@
 
 ## Vim Shortcuts
 
-### Closing / Exiting
+### Switch Modes
 
 ```text
-CTRL + w + CTRL + q -- Close currently open tab
+i               -- Exit VISUAL mode into INSERT mode
+ESC, jj, jk, kj -- Exit INSERT mode into VISUAL mode
+```
+
+### Opening / Closing / Exiting
+
+```text
+LEADER + f          -- File Quick Open
+CTRL + w + CTRL + q -- Close active File
+LEADER + w          -- Save active File
+LEADER + q          -- Close active File w/o saving
+LEADER + x          -- Save & Quit active File
 ```
 
 ### Navigation
 
 ```text
-CTRL + v         -- Vertical Split
-CTRL + s         -- Horizontal Split
-LEADER + h,j,k,l -- Navigate between Splits
-SHIFT + h,l      -- Navigate left/right tabs of current split
+LEADER + \     -- Create a vertical split
+LEADER + -     -- Create a horizontal split
+CTRL + h,j,k,l -- Navigate between Windows / Split
+SHIFT + h,l    -- Navigate left/right tabs of current split
+[ + d          -- Go to Previous Error / Warning
+] + d          -- Go to Next Error / Warning
+
+CTRL + j,k     -- Navigate UP / DOWN in menus
+h,j,k,l        -- Navigation in Hover Menu (gh)
+```
+
+```text
+gd  - Go to Definition
+gpd - Peek Definition
+gh  - Show Hover
+gi  - Go to Implementations
+gpi - Peek Implementations
+gq  - Quick fix (open the code actions menu)
+gr  - Go to References
+gt  - Go to Type Definition
+gpt - Peek Type Definition
 ```
 
 ### Terminal
@@ -30,22 +58,40 @@ CTRL + w   -- Close currently active terminal (when terminal view is focused)
 
 ```text
 CTRL + e  -- Toggle File Explorer
-SHIFT + n -- Create a New Directory
-n         -- Create a New File
+a         -- Create a New File
+f         -- Create a New Directory
 r         -- Rename currently selected file / directory
+x         -- Cut currently selected file / directory
+y         -- Copy currently selected file / directory
+p         -- Paste currently selected file / directory
 d         -- Delete currently selected file / directory
+o         -- Open file / directory (& stay in explorer menu)
+
+NAVIGATION
+j         -- Navigate UP
+k         -- Navigate DOWN
+h         -- Navigate to Parent Directory
+l         -- Navigate to Child Directory
+```
+
+### Find
+
+```text
+CTRL + f         -- Search File
+CTRL + SHIFT + f -- Global File Search
+CTRL + e         -- Toggle back to Editor (when Global File Search is active)
 ```
 
 ### MISC
 
 ```text
-LEADER + w -- Save a File
-LEADER + f -- File Quick Open
-LEADER + p -- Format Document
-LEADER + c -- Toggle comment (when text is selected)
-CTRL + /   -- Toggle comment
-J          -- Move selected lines DOWN (in VISUAL mode)
-K          -- Move selected lines UP   (in VISUAL mode)
+LEADER + ca -- Code Actions / Quick Fix
+LEADER + p  -- Format Document
+CTRL + /    -- Toggle comment
+SHIFT + j   -- Move selected lines DOWN (in VISUAL mode)
+SHIFT + k   -- Move selected lines UP   (in VISUAL mode)
+<           -- Outdent lines selected in VISUAL Mode
+>           -- Indent lines selected in VISUAL Mode
 ```
 
 ## Resources / References

@@ -26,10 +26,11 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.togglePanel"
-  },
+  // {
+  //   "key": "ctrl+j",
+  //   "command": "workbench.action.togglePanel"
+  // },
+
   // FILE TREE
   {
     "command": "workbench.action.toggleSidebarVisibility",
@@ -40,30 +41,99 @@
     "key": "ctrl+e",
     "when": "editorTextFocus"
   },
-  {
-    "key": "n",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "renameFile",
-    "key": "r",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "shift+n",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
-  },
   // {
-  //   "key": "shift+n",
-  //   "command": "workbench.action.newWindow",
-  //   "when": "!explorerViewletFocus"
+  //   "key": "space e",
+  //   "command": "workbench.action.toggleSidebarVisibility",
+  //   "when": "filesExplorerFocus && !inputFocus"
   // },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
   {
     "command": "deleteFile",
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  // {
+  //   "key": "n",
+  //   "command": "explorer.newFile",
+  //   "when": "filesExplorerFocus && !inputFocus"
+  // },
+  // {
+  //   "command": "renameFile",
+  //   "key": "r",
+  //   "when": "filesExplorerFocus && !inputFocus"
+  // },
+  // {
+  //   "key": "shift+n",
+  //   "command": "explorer.newFolder",
+  //   "when": "explorerViewletFocus"
+  // },
+  // // {
+  // //   "key": "shift+n",
+  // //   "command": "workbench.action.newWindow",
+  // //   "when": "!explorerViewletFocus"
+  // // },
+
+  // HOVER MENU NAVIGATION
+  {
+    "key": "h",
+    "command": "editor.action.scrollLeftHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "l",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+
+  // MENU NAVIGATION
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
   },
 
   // EXTRA
@@ -74,5 +144,11 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
+  },
+
+  // DISABLED
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
   }
 ]

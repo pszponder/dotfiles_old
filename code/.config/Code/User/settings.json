@@ -2,8 +2,8 @@
   // =============================================
   // ================ GENERAL ====================
   // =============================================
+  "breadcrumbs.enabled": true,
   "window.zoomLevel": 0.5,
-  "breadcrumbs.enabled": false,
   "zenMode.hideLineNumbers": false,
   "files.trimTrailingWhitespace": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -38,9 +38,8 @@
   "editor.largeFileOptimizations": true,
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
-  "editor.insertSpaces": false,
-  "editor.tabSize": 4,
-  "editor.detectIndentation": true,
+  "editor.cursorSurroundingLines": 8,
+  // SEE LANGUAGE SPECIFIC SETTINGS FOR TAB SIZE
 
   // =============================================
   // ================ TERMINAL ===================
@@ -101,10 +100,16 @@
     // "<C-w>": false, // Disable VIM binding for "Close Window"
     "<C-f>": false, // Disable VIM binding for "Find in File"
   },
+
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
   "vim.shell": "/usr/bin/zsh",
+  "vim.smartRelativeLine": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+
   "vim.insertModeKeyBindings": [
     // "jj" in Insert Mode => Go to Normal Mode
     {
@@ -122,6 +127,7 @@
       "after": ["<Esc>"]
     }
   ],
+
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     // switch b/w buffers
@@ -129,94 +135,194 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
+    // { "before": ["leader", "v"], "commands": [":vsplit"] },
+    // { "before": ["leader", "s"], "commands": [":split"] },
+    { "before": ["leader", "\\"], "commands": [":vsplit"] },
+    { "before": ["leader", "-"], "commands": [":split"] },
 
-    // panes
+    // panes / window navigation
     {
-      "before": ["leader", "h"],
+      // "before": ["leader", "h"],
+      "before": ["<C-h>"],
       "commands": ["workbench.action.focusLeftGroup"]
     },
     {
-      "before": ["leader", "j"],
+      // "before": ["leader", "j"],
+      "before": ["<C-j>"],
       "commands": ["workbench.action.focusBelowGroup"]
     },
     {
-      "before": ["leader", "k"],
+      // "before": ["leader", "k"],
+      "before": ["<C-k>"],
       "commands": ["workbench.action.focusAboveGroup"]
     },
     {
-      "before": ["leader", "l"],
+      // "before": ["leader", "l"],
+      "before": ["<C-l>"],
       "commands": ["workbench.action.focusRightGroup"]
     },
-    // NICE TO HAVE
-    { "before": ["leader", "w"], "commands": [":w!"] }, // save file
+
+    // Save file
+    { "before": ["leader", "w"], "commands": [":w!"] },
+
+    // Quit without saving
     { "before": ["leader", "q"], "commands": [":q!"] },
+
+    // Save file and quit
     { "before": ["leader", "x"], "commands": [":x!"] },
+
+    // Go to Previous Error or Warning
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
     },
+
+    // Go to Previous Error or Warning
     {
       "before": ["]", "d"],
       "commands": ["editor.action.marker.next"]
     },
+
+    // Code Actions / Quick Fix
     {
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
+
+    // File Quick Open
     { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+
+    // Format the whole document
     { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+  ],
+
+  "vim.normalModeKeyBindings": [
+    // https://dev.to/ansonh/10-vs-code-vim-tricks-to-boost-your-productivity-1b0n
+
+    // Go to Definition
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+
+    // Peek Definition
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+
+    // Show Hover
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
-    }
+    },
+
+    // Go to Implementations
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+
+    // Peek Implementations
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+
+    // Quick Fix (open the code action lightbulb menu)
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+
+    // Go to References
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+
+    // Go to Type Definition
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+
+    // Peek Type Definition
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+
+    // // Open File Explorer
+    // {
+    //   "before": ["<leader>", "e"],
+    //   "commands": ["workbench.view.explorer"]
+    // },
   ],
+
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
     { "before": [">"], "commands": ["editor.action.indentLines"] },
+
     // Move selected lines while staying in visual mode
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+
+    // Add current selection to next find match
+    {
+      "before": ["alt", "d"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
   ],
 
   // =============================================
   // ============== LANGUAGE SPECIFIC ============
   // =============================================
+  "editor.insertSpaces": false, // Default to tabs
+  "editor.tabSize": 4, // Default to 4 spaces
+  "editor.detectIndentation": true, // Auto detect indentation
+
   "[javascript]": {
     // "editor.tabSize": 4
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
+
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "go.toolsManagement.autoUpdate": true,
+
   "[typescript]": {
     // "editor.tabSize": 4
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
   "[css]": {
     "editor.suggest.insertMode": "replace"
   },
+
   "[json]": {
     // "editor.tabSize": 4
   },
+
   "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    // "editor.tabSize": 4
   },
+
   "[python]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+
   "[go]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": false
   },
+  "go.toolsManagement.autoUpdate": true,
+
   "[markdown]": {
     // "editor.tabSize": 4,
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -388,6 +494,7 @@
     "gensalt",
     "goroutines",
     "hashpw",
+    "highlightedyank",
     "hlsearch",
     "IIFE",
     "inmem",
@@ -403,7 +510,6 @@
     "openapi",
     "outdent",
     "pino",
-    "Piotr",
     "prettierc",
     "pydantic",
     "REDOC",
@@ -416,10 +522,7 @@
     "starlette",
     "struct",
     "Structs",
-    "Szponder",
-    "Tarnowski",
     "todos",
-    "Tomasz",
     "transpiles",
     "Traversy",
     "treeshake",
