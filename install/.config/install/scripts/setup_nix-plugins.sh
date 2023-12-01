@@ -52,7 +52,8 @@ nix-env -iA \
 	nixpkgs.tokei \
 	nixpkgs.difftastic \
 	nixpkgs.jq \
-	nixpkgs.xclip
+	nixpkgs.xclip \
+	nixpkgs.lf
 
 # TODO: Add Brave browser, wezterm, kitty (need https://github.com/nix-community/nixGL), vscode, postman, discord, obsidian, etc.
 # # Install Programs
