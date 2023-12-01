@@ -24,13 +24,20 @@ LEADER + x          -- Save & Quit active File
 ```text
 LEADER + \     -- Create a vertical split
 LEADER + -     -- Create a horizontal split
+
 CTRL + h,j,k,l -- Navigate between Windows / Split
 SHIFT + h,l    -- Navigate left/right tabs of current split
+
 [ + d          -- Go to Previous Error / Warning
 ] + d          -- Go to Next Error / Warning
 
+CTRL + o       -- Navigate Back
+CTRL + i       -- Navigate Forward
+
 CTRL + j,k     -- Navigate UP / DOWN in menus
 h,j,k,l        -- Navigation in Hover Menu (gh)
+
+TAB            -- Toggle focus between right and left peek widget
 ```
 
 ```text
@@ -52,6 +59,11 @@ CTRL + ,   -- Toggle Between Editor & Terminal (Opens a new terminal if one is n
 CTRL +  n  -- Create a new terminal (when terminal view is focused)
 CTRL + a,b -- Switch between terminals (when terminal view is is focused)
 CTRL + w   -- Close currently active terminal (when terminal view is focused)
+
+CTRL + u,d         -- Scroll Up / Down Terminal
+CTRL + k,j         -- Move Up / Down Terminal (line-by-line)
+CTRL + SHIFT + k,j -- Scroll to PREVIOUS / NEXT command
+CTRL + SHIFT + u,d -- Scroll to TOP / BOTTOM of Terminal
 ```
 
 ### File Explorer

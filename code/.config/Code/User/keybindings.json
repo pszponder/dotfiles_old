@@ -1,6 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
-  // TERMINAL
+  // ========================
+  // ======= EDITOR =========
+  // ========================
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus"
+  },
+
+  // ========================
+  // ====== TERMINAL ========
+  // ========================
   {
     "key": "ctrl+,",
     "command": "workbench.action.terminal.toggleTerminal",
@@ -26,12 +42,57 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
+
+  // TERMINAL NAVIGATION
+  {
+    "key": "ctrl+u",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "workbench.action.terminal.scrollToTop",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "workbench.action.terminal.scrollToBottom",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.scrollUp",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.scrollDown",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.scrollToNextCommand",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.scrollToPreviousCommand",
+    "when": "terminalFocus"
+  },
+
   // {
   //   "key": "ctrl+j",
   //   "command": "workbench.action.togglePanel"
   // },
 
-  // FILE TREE
+  // ===========================
+  // ====== FILE TREE ==========
+  // ===========================
   {
     "command": "workbench.action.toggleSidebarVisibility",
     "key": "ctrl+e"
@@ -102,7 +163,9 @@
   // //   "when": "!explorerViewletFocus"
   // // },
 
-  // HOVER MENU NAVIGATION
+  // ===============================
+  // ==== HOVER MENU NAVIGATION ====
+  // ===============================
   {
     "key": "h",
     "command": "editor.action.scrollLeftHover",
@@ -124,7 +187,20 @@
     "when": "editorHoverFocused"
   },
 
-  // MENU NAVIGATION
+  // ===============================
+  // ==== PEEK MENU NAVIGATION =====
+  // ===============================
+
+  // Toggle focus between right and left peek widget
+  {
+    "key": "tab",
+    "command": "togglePeekWidgetFocus",
+    "when": "inReferenceSearchEditor && vim.active && vim.mode != 'Insert' || referenceSearchVisible"
+  },
+
+  // ===============================
+  // ====== MENU NAVIGATION ========
+  // ===============================
   {
     "key": "ctrl+j",
     "command": "workbench.action.quickOpenSelectNext",
@@ -146,7 +222,9 @@
     "command": "workbench.action.toggleZenMode"
   },
 
-  // DISABLED
+  // ===============================
+  // ====== DISABLED COMMANDS ======
+  // ===============================
   {
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
