@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Update Nix Packages
 echo "Updating Nix Packages..."

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Configure Gnome Terminal
 
 # https://github.com/catppuccin/gnome-terminal

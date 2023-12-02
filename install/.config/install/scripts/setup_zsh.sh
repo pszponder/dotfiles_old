@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 # https://www.jakewiesler.com/blog/zsh-as-default-shell

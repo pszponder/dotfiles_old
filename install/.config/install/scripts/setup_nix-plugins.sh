@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://zsh.sourceforge.io/
 # https://starship.rs/

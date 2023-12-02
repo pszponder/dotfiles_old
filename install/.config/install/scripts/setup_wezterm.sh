@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set the GitHub API URL for WezTerm releases
 GITHUB_API_URL="https://api.github.com/repos/wez/wezterm/releases/latest"

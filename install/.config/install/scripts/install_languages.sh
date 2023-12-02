@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Installing build-essentials
 # https://devguide.python.org/getting-started/setup-building/#build-dependencies
@@ -39,3 +39,8 @@ rtx use -g python
 echo "Installing Dotnet..."
 rtx install dotnet
 rtx use -g dotnet
+
+# Install BunJS
+echo "Installing BunJS..."
+rtx install bun
+rtx use -g bun

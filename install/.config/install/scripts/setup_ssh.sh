@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Define the SSH directory path
 SSH_DIR="$HOME/.ssh"

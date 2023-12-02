@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install dependencies
 sudo apt install fontforge -y
 sudo apt-get install python3-fontforge

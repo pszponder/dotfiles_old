@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ================================================
 # Install Git (https://git-scm.com/download/linux)

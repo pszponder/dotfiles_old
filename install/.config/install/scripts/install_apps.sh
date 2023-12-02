@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ================================================
 # Install Brave Browser (https://brave.com/linux/)
