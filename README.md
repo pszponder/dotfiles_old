@@ -1,4 +1,4 @@
-# dotfiles
+# .files
 
 My dotfile configuration
 
@@ -95,7 +95,6 @@ smoke_tests="Normal
 == === !== >= <= =>
 󰐊     󰄉      󰑓 󰒲 "
 
-
 printf "%b" "${smoke_tests}"
 ```
 
@@ -113,7 +112,6 @@ printf "%b" "${smoke_tests}"
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Fuzzy Finder - fzf](https://github.com/junegunn/fzf)
 - [navi (look up and execute shell one-liners)](https://github.com/denisidoro/navi)
-- [ranger (cli file manager)](https://github.com/ranger/ranger)
 - [rtx - Runtime manager (asdf rust clone)](https://github.com/jdx/rtx)
 - [ctop (top-like interface for container metrics)](https://github.com/bcicen/ctop)
 - [bottom (rust rewrite of top)](https://clementtsang.github.io/bottom/0.8.0/)
@@ -122,6 +120,8 @@ printf "%b" "${smoke_tests}"
 - [delta (improved diff tool)](https://github.com/dandavison/delta)
 - [curlie](https://github.com/rs/curlie)
 - [httpie](https://httpie.io/)
+- [lf (cli file manager)](https://github.com/gokcehan/lf)
+- [ranger (cli file manager)](https://github.com/ranger/ranger)
 - [yazi - terminal file manager](https://github.com/sxyazi/yazi)
 
 ## Optional
@@ -151,3 +151,7 @@ Dotfile Examples
 - [chris@machine dotfiles](https://github.com/ChristianChiarulli/Machfiles/tree/master)
 - [edheltez - dotfiles](https://github.com/edheltzel/dotfiles)
 - [dt dotfiles](https://gitlab.com/dwt1/dotfiles)
+- [Mathias's dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [Awesome Dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [webpro dotfiles](https://github.com/webpro/dotfiles)
+- [Jogendra - I Do Dotfiles](https://jogendra.dev/i-do-dotfiles)
