@@ -12,11 +12,11 @@ ESC, jj, jk, kj -- Exit INSERT mode into VISUAL mode
 ### Opening / Closing / Exiting
 
 ```text
-LEADER + f          -- File Quick Open
-CTRL + w + CTRL + q -- Close active File
-LEADER + w          -- Save active File
-LEADER + q          -- Close active File w/o saving
-LEADER + x          -- Save & Quit active File
+LEADER + f   -- File Quick Open
+CTRL + w + q -- Close active File
+LEADER + w   -- Save active File
+LEADER + q   -- Close active File w/o saving
+LEADER + x   -- Save & Quit active File
 ```
 
 ### Navigation
@@ -38,18 +38,20 @@ CTRL + j,k     -- Navigate UP / DOWN in menus
 h,j,k,l        -- Navigation in Hover Menu (gh)
 
 TAB            -- Toggle focus between right and left peek widget
+
+LEADER + d     -- Add Selection to Next Find Match (CTRL+D alternative)
 ```
 
 ```text
-gd  - Go to Definition
-gpd - Peek Definition
-gh  - Show Hover
-gi  - Go to Implementations
-gpi - Peek Implementations
-gq  - Quick fix (open the code actions menu)
-gr  - Go to References
-gt  - Go to Type Definition
-gpt - Peek Type Definition
+gd  -- Go to Definition
+gpd -- Peek Definition
+gh  -- Show Hover
+gi  -- Go to Implementations
+gpi -- Peek Implementations
+gq  -- Quick fix (open the code actions menu)
+gr  -- Go to References
+gt  -- Go to Type Definition
+gpt -- Peek Type Definition
 ```
 
 ### Terminal
@@ -108,3 +110,4 @@ SHIFT + k   -- Move selected lines UP   (in VISUAL mode)
 
 ## Resources / References
 - [Melkey - Mastering VIM Motions in VSCode (Mouseless Development)](https://www.youtube.com/watch?v=GST8we5uABo)
+- [10 VSCode Vim Tricks to Boost Your Productivity](https://dev.to/ansonh/10-vs-code-vim-tricks-to-boost-your-productivity-1b0n)

@@ -269,10 +269,12 @@
     // Move selected lines while staying in visual mode
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+  ],
 
+  "vim.visualModeKeyBindingsNonRecursive": [
     // Add current selection to next find match
     {
-      "before": ["alt", "d"],
+      "before": ["<leader>", "d"],
       "commands": ["editor.action.addSelectionToNextFindMatch"]
     },
   ],
@@ -536,5 +538,4 @@
     "vitest",
     "vsplit"
   ],
-  "window.zoomLevel": 1,
 }
