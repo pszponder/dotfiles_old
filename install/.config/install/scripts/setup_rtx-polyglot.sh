@@ -13,7 +13,8 @@ rtx use -g node
 
 # Install BunJS
 echo "Installing BunJS..."
-curl -fsSL https://bun.sh/install | bash
+rtx install bun
+rtx use -g bun
 
 # Install Golang
 echo "Installing Golang..."
@@ -29,11 +30,6 @@ rtx use -g python
 echo "Installing Dotnet..."
 rtx install dotnet
 rtx use -g dotnet
-
-# Install BunJS
-echo "Installing BunJS..."
-rtx install bun
-rtx use -g bun
 
 # Install Rust
 echo "Installing Rust..."
