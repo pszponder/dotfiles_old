@@ -1,0 +1,39 @@
+[user]
+	name = Your Name
+	email = your.email@example.com
+
+[color]
+	ui = true # colorize output
+
+[core]
+	editor = vim
+	autocrlf = input # convert CRLF to LF on commit
+	pager = delta --dark # use delta for paging
+
+[diff]
+	tool = default-difftool # use 'git difftool' to see changes
+
+[merge]
+	tool = default-mergetool # use 'git mergetool' to resolve conflicts
+
+[interactive]
+	diffFilter = delta --color-only # use delta for interactive staging
+
+[delta]
+	syntax-theme = Dracula
+	line-numbers = true # show line numbers
+	side-by-side = true # show diffs side-by-side
+	zero-width-emphasys = true # highlight changed words only
+	navigate = true # allow navigating between hunks
+	decorate-auto = true # decorate commit messages
+
+[push]
+	default = simple # or 'scurrent' for current branch only
+
+[credential]
+	helper = cache --timeout=3600 # stores password for 1 hour
+
+[help]
+	autocorrect = 1 # autocorrect typos after 1 sec
+
+[alias]
