@@ -1,0 +1,8 @@
+[tools]
+node = "latest"
+bun = "latest"
+deno = "latest"
+python = "latest"
+go = "latest"
+dotnet = "latest"
+rust = "latest"
