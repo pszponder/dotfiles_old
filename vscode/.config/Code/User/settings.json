@@ -484,6 +484,7 @@
     "conint",
     "conlist",
     "DBNAME",
+    "deno",
     "dlig",
     "Do'Urden",
     "dotenv",
