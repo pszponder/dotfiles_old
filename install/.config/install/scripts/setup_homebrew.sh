@@ -74,3 +74,28 @@ if [[ $target = "darwin-aarch64" ]]; then
 		discord \
 		obsidian \
 fi
+
+
+# [topgrade (updater)](https://github.com/topgrade-rs/topgrade)
+# [procs (replacement for ps written in Rust)](https://github.com/dalance/procs)
+# [bat (alternative to cat)](https://github.com/sharkdp/bat)
+# [sd (sed alternative)](https://github.com/chmln/sd)
+# [tealdeer (tldr in rust)](https://github.com/dbrgn/tealdeer)
+# [jq (manipulate json in command line)](https://jqlang.github.io/jq/)
+# [lsd (ls alternative)](https://github.com/lsd-rs/lsd)
+# [fd (user-friendly alternative to find)](https://github.com/sharkdp/fd)
+# [zoxide (smarter cd command)](https://github.com/ajeetdsouza/zoxide)
+# [ripgrep](https://github.com/BurntSushi/ripgrep)
+# [Fuzzy Finder - fzf](https://github.com/junegunn/fzf)
+# [navi (look up and execute shell one-liners)](https://github.com/denisidoro/navi)
+# [rtx - Runtime manager (asdf rust clone)](https://github.com/jdx/rtx)
+# [ctop (top-like interface for container metrics)](https://github.com/bcicen/ctop)
+# [bottom (rust rewrite of top)](https://clementtsang.github.io/bottom/0.8.0/)
+# [lazygit (cli git client)](https://github.com/jesseduffield/lazygit)
+# [lazydocker (simple terminal UI for docker and docker-compose)](https://github.com/jesseduffield/lazydocker)
+# [delta (improved diff tool)](https://github.com/dandavison/delta)
+# [curlie](https://github.com/rs/curlie)
+# [httpie](https://httpie.io/)
+# [lf (cli file manager)](https://github.com/gokcehan/lf)
+# [ranger (cli file manager)](https://github.com/ranger/ranger)
+# [yazi - terminal file manager](https://github.com/sxyazi/yazi)
