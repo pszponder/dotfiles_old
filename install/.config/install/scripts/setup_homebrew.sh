@@ -33,7 +33,6 @@ brew install \
 	xclip \
 	yazi \
 	starship \
-	docker \
 	httpie \
 	yazi \
 	rtx \
@@ -66,6 +65,7 @@ if [[ $target = "darwin-aarch64" ]]; then
 		postman \
 		discord \
 		obsidian \
+		docker \
 fi
 
 # [topgrade (updater)](https://github.com/topgrade-rs/topgrade)
