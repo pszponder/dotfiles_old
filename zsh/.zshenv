@@ -40,20 +40,3 @@ export STARSHIP_CONFIG="$DOTFILES/starship/starship.toml" # Location of Starship
 # Use neovim for any program requiring a text editor
 export EDITOR="nvim"
 export VISUAL="nvim"
-
-# +-----------------------+
-# | PROGRAMMING LANGUAGES |
-# +-----------------------+
-
-# # Source Rust cargo environment
-# . "$HOME/.cargo/env"
-
-# # Add golang to path
-# export PATH=$PATH:/usr/local/go/bin
-
-# # re-enable git terminal prompt
-# export GIT_TERMINAL_PROMPT=1
-
-# # BunJS -- https://bun.sh/
-# export BUN_INSTALL="$HOME/.bun"
-# export PATH="$BUN_INSTALL/bin:$PATH"
