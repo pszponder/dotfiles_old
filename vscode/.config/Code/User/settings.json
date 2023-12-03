@@ -344,7 +344,7 @@
   // =============================================
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.tableFormatter.normalizeIndentation": true,
-  "sonarlint.pathToNodeExecutable": "~/.local/share/rtx/installs/node/21.2.0/bin/node",
+  "sonarlint.pathToNodeExecutable": "/home/piotr/.local/share/rtx/shims/node",
   "disableLigatures.ligatures": [
     ".=",
     ".-",
@@ -517,6 +517,7 @@
     "prettierc",
     "pydantic",
     "REDOC",
+    "scrollback",
     "sessionmaker",
     "signin",
     "signout",
