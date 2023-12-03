@@ -4,6 +4,14 @@
 # ZSH PLUGINS / PACKAGES
 # ======================
 
+# +--------------------------+
+# | HOMEBREW PACKAGE MANAGER |
+# +--------------------------+
+# https://brew.sh/
+
+# eval "$(/opt/homebrew/bin/brew shellenv)" # macOS (ARM) specific Homebrew path
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" # Linux specific Homebrew path
+
 # +----------------------+
 # | ZAP (PLUGIN MANAGER) |
 # +----------------------+
@@ -22,43 +30,14 @@ plug "kutsan/zsh-system-clipboard"
 autoload -Uz compinit
 compinit
 
-# +---------------------+
-# | NIX PACKAGE MANAGER |
-# +---------------------+
-if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-	. '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-fi
-
-# +--------------------------+
-# | HOMEBREW PACKAGE MANAGER |
-# +--------------------------+
-# https://brew.sh/
-
-# Check the operating system
-case $(uname -ms) in
-'Darwin x86_64')
-	target=darwin-x64
-	;;
-'Darwin arm64')
-	target=darwin-aarch64
-	;;
-'Linux aarch64' | 'Linux arm64')
-	target=linux-aarch64
-	;;
-'Linux x86_64' | *)
-	target=linux-x64
-	;;
-esac
-
-if [[ $target = "darwin-aarch64" ]]; then
-		# macOS specific Homebrew path
-		eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [[ $target = "linux-x64" ]]; then
-		# Linux specific Homebrew path
-		eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
+# # +---------------------+
+# # | NIX PACKAGE MANAGER |
+# # +---------------------+
+# if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+# 	. '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+# fi
 
 # +------------------------------+
 # | RTX POLYGLOT RUNTIME MANAGER |
 # +------------------------------+
-eval "$(~/.local/share/rtx/bin/rtx activate zsh)"
+eval "$(rtx activate zsh)"
