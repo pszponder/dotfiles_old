@@ -10,6 +10,7 @@ fi
 
 # Install Brew CLI Packages
 brew install \
+	gcc \
 	git \
 	neovim \
 	fzf \
@@ -27,23 +28,15 @@ brew install \
 	lazygit \
 	git-delta \
 	broot \
-	skim \
 	tokei \
 	jq \
 	xclip \
 	yazi \
 	starship \
 	docker \
-	rtx \
 	httpie \
 	yazi \
-
-# # Install BunJS (https://bun.sh/docs/installation)
-# brew tap oven-sh/bun
-# brew install bun
-
-# Install languages using rtx
-source ./setup_rtx-polyglot.sh
+	rtx \
 
 # Install Brew GUI Packages (if on macOS)
 case $(uname -ms) in
@@ -74,7 +67,6 @@ if [[ $target = "darwin-aarch64" ]]; then
 		discord \
 		obsidian \
 fi
-
 
 # [topgrade (updater)](https://github.com/topgrade-rs/topgrade)
 # [procs (replacement for ps written in Rust)](https://github.com/dalance/procs)
