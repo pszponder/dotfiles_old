@@ -4,11 +4,11 @@ My dotfile configuration
 
 ## Usage
 
-See [Prerequisites](./README.md#prerequisites) section before installing
+See [Prerequisites](./README.md#prerequisites) section before using.
 
 1. `cd` into the repository
 2. Run `stow` to symlink the whole repo or just a specific directory
-3. OPTIONALLY: use the `-n` option to simulate what will happen (preview changes before they get applied)
+3. **OPTIONALLY:** Use the `-n` option to simulate what will happen (preview changes before they get applied)
 
 ```bash
 # -n option simulates what will happen
@@ -23,9 +23,27 @@ stow -v -t ~ zsh # just symlink the zsh config (or any other directory)
 
 ## Prerequisites
 
+### Setup Homebrew
+
+Execute the following script to install and setup homebrew
+
+```bash
+./install/.config/install/scripts/setup_homebrew.sh
+```
+
+### Setup ZSH
+
+If you are not using `ZSH` as your default shell, run the following script
+
+```bash
+./install/.config/install/scripts/setup_zsh.sh
+```
+
 ### Stow
 
 Dotfiles are managed by [`GNU Stow`](https://www.gnu.org/software/stow/)
+
+**NOTE:** If you followed the instructions for setting up Homebrew, you should already have `stow` installed
 
 ```bash
 # Apt
@@ -40,7 +58,7 @@ brew install stow
 Installing Fonts:
 1. Download one or more fonts from the list
     1. [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
-    2. [Comic Code](https://tosche.net/fonts/comic-code) (Will need to use `Symbols Nerd Font` as secondary for Powerline Support)
+    2. [Comic Code](https://tosche.net/fonts/comic-code) (May need to use `Symbols Nerd Font` as secondary for Powerline Support)
     3. [Monaspace](https://github.com/githubnext/monaspace)
     4. [JetBrains mono](https://www.jetbrains.com/lp/mono/)
     5. [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (Grab and install Symbols Nerd Font to be used for fallback when PL not integrated into language)
@@ -96,11 +114,6 @@ smoke_tests="Normal
 printf "%b" "${smoke_tests}"
 ```
 
-#### Shell tools
-
-Run the `./install/.config/install/scripts/setup_brew.sh` script
-- If on macOS, this script will also install GUI applications
-
 ## Optional
 
 ### Color Themes
@@ -108,6 +121,15 @@ Run the `./install/.config/install/scripts/setup_brew.sh` script
 - [Catppuccin Theme](https://github.com/catppuccin)
 - [Catppuccin Theme - Gnome Terminal](https://github.com/catppuccin/gnome-terminal)
 - [Catppuccin Theme - NeoVim](https://github.com/catppuccin/nvim)
+
+### GUI Apps
+
+If on linux, refer to `./install/.config/install/scripts/install_apps.sh`
+If on macOS, refer to `./install/.config/install/scripts/setup_brew.sh` (installs CLI + GUI tools on macOS)
+
+### Programming Languages
+
+Run `./install/.config/install/scripts/install_rtx-polyglot.sh` to setup [rtx](https://github.com/jdx/rtx) and install pre-configured languages from `./rtx/.config/rtx/config.toml`
 
 ## Resources / References
 
