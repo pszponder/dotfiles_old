@@ -98,7 +98,8 @@ printf "%b" "${smoke_tests}"
 
 #### Shell tools
 
-Refer to `setup_homebrew.sh` or `setup_nix.sh` and `setup_nix-plugins.sh` for installing tools
+Run the `./install/.config/install/scripts/setup_brew.sh` script
+- If on macOS, this script will also install GUI applications
 
 ## Optional
 
