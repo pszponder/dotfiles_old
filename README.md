@@ -6,21 +6,19 @@ My dotfile configuration
 
 See [Prerequisites](./README.md#prerequisites) section before installing
 
-Clone project into your `$HOME` / `~` directory
-
-```bash
-git clone git@github.com:pszponder/dotfiles.git ~/.dotfiles
-```
-
-1. `cd` into `~/.dotfiles`
+1. `cd` into the repository
 2. Run `stow` to symlink the whole repo or just a specific directory
+3. OPTIONALLY: use the `-n` option to simulate what will happen (preview changes before they get applied)
 
 ```bash
-# symlink everything from repo (except .md files)
-stow */
+# -n option simulates what will happen
+stow -v -n -t ~ */
 
-# symlink specific directory
-stow zsh # just symlink the zsh config
+# symlink everything from dotfiles repo (except .md files)
+stow -v -t ~ */
+
+# symlink specific directory (zsh dir in this case)
+stow -v -t ~ zsh # just symlink the zsh config (or any other directory)
 ```
 
 ## Prerequisites
