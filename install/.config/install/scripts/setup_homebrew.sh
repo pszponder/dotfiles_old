@@ -36,6 +36,7 @@ brew install \
 	httpie \
 	yazi \
 	rtx \
+	stow \
 
 # Install Brew GUI Packages (if on macOS)
 case $(uname -ms) in
